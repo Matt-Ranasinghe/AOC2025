@@ -3,9 +3,9 @@ def part1() -> int:
     result: int = 0
     with open("day1.txt", "r") as file:
         for line in file:
-            goRight: bool = (line[0] == 'R')
+            go_right: bool = (line[0] == 'R')
             movement: int = int(line[1::].strip())
-            if (goRight):
+            if (go_right):
                 position += movement
                 if (position > 99):
                     position %= 100
@@ -23,9 +23,9 @@ def part2() -> int:
     result: int = 0
     with open("day1.txt", "r") as file:
         for line in file:
-            goRight: bool = (line[0] == 'R')
+            go_right: bool = (line[0] == 'R')
             movement: int = int(line[1::].strip())
-            if (goRight):
+            if (go_right):
                 position += movement
                 result += position // 100
                 position %= 100
