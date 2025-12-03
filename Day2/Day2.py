@@ -35,7 +35,7 @@ def duplicated_half_numbers_in_range(start: int, end: int) -> int:
 
 def part2() -> int:
     result: int = 0
-    with open("test.txt", "r") as file:
+    with open("day2.txt", "r") as file:
         contents: str = file.read()
         components: list[str] = contents.strip().replace("\n", "").split(',')
         for component in components:
