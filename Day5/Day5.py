@@ -50,7 +50,6 @@ def optimise_ranges(date_ranges: list[tuple[int, int]]) -> list[tuple[int, int]]
         start: int = date_ranges[count][0]
         end: int = date_ranges[count][1]
         temp: int = count + 1
-
         for j in range(count + 1, n):
             if (date_ranges[j][0] <= end):
                 end = max(end, date_ranges[j][1])
