@@ -1,5 +1,4 @@
 from operator import itemgetter
-import operator
 
 
 def part1() -> int:
