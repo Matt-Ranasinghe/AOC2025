@@ -1,6 +1,3 @@
-from turtle import st
-
-
 def part1() -> int:
     result: int = 0
     with open("day2.txt", "r") as file:
